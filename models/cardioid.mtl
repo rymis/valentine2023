@@ -1,0 +1,12 @@
+newmtl default
+# Kd 0.0 0.0 0.0
+# Ks 1.0 1.0 1.0
+# Ns 1.0
+# d 1.0 1.0 1.0
+# Tf 1.0 1.0 1.0
+# Ni 1.0
+map_Kd textures/TH_Red_Fabric_Pattern_baseColor.png
+norm textures/TH_Red_Fabric_Pattern_normal.png
+map_Pr textures/TH_Red_Fabric_Pattern_roughness.png
+
+
