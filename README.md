@@ -45,10 +45,15 @@ $$a = s \cdot \sqrt{1 - z^2}$$
 To make a three dimensional model we need to calculate points for each layer and then to make triangles of them. If we have N points in each layer and we have L layers we can define points as:
 
  $$ z = j / L $$
+
  $$ \phi = \frac{2 \pi \cdot i}{N} - \pi $$
+
  $$ a = s \cdot \sqrt{1 - z^2} $$
+
  $$ x = 2 a \cdot (1 - \cos \phi) \cdot \cos \phi $$
+
  $$ y = 2 a \cdot (1 - \cos \phi) \cdot \sin \phi $$
+
  $$ P_{i,j} = (x, y, z) $$
 
 ```math
