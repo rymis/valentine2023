@@ -44,29 +44,12 @@ $$a = s \cdot \sqrt{1 - z^2}$$
 
 To make a three dimensional model we need to calculate points for each layer and then to make triangles of them. If we have N points in each layer and we have L layers we can define points as:
 
-```math
-z = j / L
-```
-
-```math
-\phi = \frac{2 \pi \cdot i}{N} - \pi
-```
-
-```math
-a = s \cdot \sqrt{1 - z^2}
-```
-
-```math
-x = 2 a \cdot (1 - \cos \phi) \cdot \cos \phi
-```
-
-```math
-y = 2 a \cdot (1 - \cos \phi) \cdot \sin \phi
-```
-
-```math
-P_{i,j} = (x, y, z)
-```
+ $$ z = j / L $$
+ $$ \phi = \frac{2 \pi \cdot i}{N} - \pi $$
+ $$ a = s \cdot \sqrt{1 - z^2} $$
+ $$ x = 2 a \cdot (1 - \cos \phi) \cdot \cos \phi $$
+ $$ y = 2 a \cdot (1 - \cos \phi) \cdot \sin \phi $$
+ $$ P_{i,j} = (x, y, z) $$
 
 ```math
 j \in [0 \dots L - 1], i \in [0 \dots N - 1]
@@ -74,11 +57,11 @@ j \in [0 \dots L - 1], i \in [0 \dots N - 1]
 
 To construct top half of the cardioid we will need four sets of triangles:
 
-$$A_{1} = \{ (P{i, j}, P{i + 1, j} : P{i, j + 1}), i \in [0 \dots N - 1], j \in [0 \dots L - 1] \} $$
+$$A_{1} = \lbrace (P{i, j}, P{i + 1, j} : P{i, j + 1}), i \in [0 \dots N - 1], j \in [0 \dots L - 1] \rbrace $$
 
-$$A_{2} = \{ (P{i + 1, j}, P{i + 1, j + 1} : P{i, j + 1}), i \in [0 \dots N - 1], j \in [0 \dots L - 1] \} $$
+$$A_{2} = \lbrace (P{i + 1, j}, P{i + 1, j + 1} : P{i, j + 1}), i \in [0 \dots N - 1], j \in [0 \dots L - 1] \rbrace $$
 
-$$A_{3} = \{ (P{i, L-1}, P{i + 1, L-1} : (0, 0, 1)), i \in [0 \dots N - 1] \} $$
+$$A_{3} = \lbrace (P{i, L-1}, P{i + 1, L-1} : (0, 0, 1)), i \in [0 \dots N - 1] \rbrace $$
 
 For the bottom part we will need to change the order of points to have correct normal vectors but in the idea is the same.
 
