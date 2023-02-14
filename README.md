@@ -148,7 +148,7 @@ Reference
 ---------
   1. [Cardioid](https://encyclopediaofmath.org/index.php?title=Cardioid)
   2. [Hearty Munching on Cardioids](http://www.cut-the-knot.org/ctk/Cardi.shtml)
-  3. [Venus in mythology](https://en.wikipedia.org/wiki/Venus_(mythology)
+  3. [Venus in mythology](https://en.wikipedia.org/wiki/Venus_(mythology) https://en.wikipedia.org/wiki/Venus_%28mythology%29)
   4. [Venus](https://en.wikipedia.org/wiki/Venus)
   5. [Earth-Venus cardioid-like orbit patterns](https://www.geogebra.org/m/egcwbtds)
   6. [Valentine's Day](https://en.wikipedia.org/wiki/Valentine%27s_Day)
