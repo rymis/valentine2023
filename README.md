@@ -8,9 +8,9 @@ Cardioid [1] is a well known function in mathematics that looks like a typical i
 Definitions
 -----------
 Cardiod function is defined in polar coordinates as
- $$ x(\phi) = 2a(1 - \cos \phi) \cdot \cos \phi $$
- $$ y(\phi) = 2a(1 - \cos \phi) \cdot \sin \phi $$
- $$ 0 <= \phi < 2 \pi $$
+ $$x(\phi) = 2a(1 - \cos \phi) \cdot \cos \phi$$
+ $$y(\phi) = 2a(1 - \cos \phi) \cdot \sin \phi$$
+ $$0 <= \phi < 2 \pi$$
 
 It looks like showed on image 1:
 
@@ -40,23 +40,23 @@ Every year February 14 we can see a lot of hearts everywhere. The heart became a
 Three dimensional Cardioid
 ---------------------------
 To construct three dimensional cardioid we need to add the second parameter. To do it we will stack cardioids with different sizes. Size of the cardioid depends on it's height and is defined as
-$$ a = s \cdot \sqrt{1 - z^2} $$
+$$a = s \cdot \sqrt{1 - z^2}$$
 
 To make a three dimensional model we need to calculate points for each layer and then to make triangles of them. If we have N points in each layer and we have L layers we can define points as:
 
-$$ z = j / L $$
-$$ \phi = \frac{2 \pi \cdot i}{N} - \pi $$
-$$ a = s \cdot \sqrt{1 - z^2} $$
-$$ x = 2 a \cdot (1 - \cos \phi) \cdot \cos \phi $$
-$$ y = 2 a \cdot (1 - \cos \phi) \cdot \sin \phi $$
-$$ P_{i,j} = (x, y, z) $$
-$$ j \in [0 \dots L - 1], i \in [0 \dots N - 1] $$
+$$z = j / L$$
+$$\phi = \frac{2 \pi \cdot i}{N} - \pi$$
+$$a = s \cdot \sqrt{1 - z^2}$$
+$$x = 2 a \cdot (1 - \cos \phi) \cdot \cos \phi$$
+$$y = 2 a \cdot (1 - \cos \phi) \cdot \sin \phi$$
+$$P_{i,j} = (x, y, z) $$
+$$j \in [0 \dots L - 1], i \in [0 \dots N - 1]$$
 
 To construct top half of the cardioid we will need four sets of triangles:
 
-$$ A_1 = \{ (P{i, j}, P{i + 1, j} : P{i, j + 1}), i \in [0 \dots N - 1], j \in [0 \dots L - 1] \} $$
-$$ A_2 = \{ (P{i + 1, j}, P{i + 1, j + 1} : P{i, j + 1}), i \in [0 \dots N - 1], j \in [0 \dots L - 1] \} $$
-$$ A_3 = \{ (P{i, L-1}, P{i + 1, L-1} : (0, 0, 1)), i \in [0 \dots N - 1] \} $$
+$$A_{1} = \{ (P{i, j}, P{i + 1, j} : P{i, j + 1}), i \in [0 \dots N - 1], j \in [0 \dots L - 1] \}$$
+$$A_{2} = \{ (P{i + 1, j}, P{i + 1, j + 1} : P{i, j + 1}), i \in [0 \dots N - 1], j \in [0 \dots L - 1] \}$$
+$$A_{3} = \{ (P{i, L-1}, P{i + 1, L-1} : (0, 0, 1)), i \in [0 \dots N - 1] \}$$
 
 For the bottom part we will need to change the order of points to have correct normal vectors but in the idea is the same.
 
@@ -138,7 +138,7 @@ Reference
 ---------
   1. [Cardioid](https://encyclopediaofmath.org/index.php?title=Cardioid)
   2. [Hearty Munching on Cardioids](http://www.cut-the-knot.org/ctk/Cardi.shtml)
-  3. [Venus (mythology)](https://en.wikipedia.org/wiki/Venus_(mythology)]
+  3. [Venus (mythology)](https://en.wikipedia.org/wiki/Venus_(mythology)
   4. [Venus](https://en.wikipedia.org/wiki/Venus)
   5. [Earth-Venus cardioid-like orbit patterns](https://www.geogebra.org/m/egcwbtds)
   6. [Valentine's Day](https://en.wikipedia.org/wiki/Valentine%27s_Day)
